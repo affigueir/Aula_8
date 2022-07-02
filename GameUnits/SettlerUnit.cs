@@ -14,5 +14,9 @@ namespace GameUnits
         { 
             System.Console.WriteLine("Your unit has settled!");
         }
+        public override string ToString()
+        {
+            return $"Settler" + base.ToString();
+        }
     }
 }

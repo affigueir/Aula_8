@@ -9,6 +9,8 @@ namespace GameUnits
             SettlerUnit Bandit = new SettlerUnit(20, 100);
             MilitaryUnit Soldier = new MilitaryUnit(0, 20, 20, 150);
 
+            System.Console.WriteLine(Soldier);
+            System.Console.WriteLine("___________________");
             System.Console.WriteLine(Bandit.Health);
             Soldier.Attack(Bandit);
             System.Console.WriteLine(Bandit.Health);
@@ -17,6 +19,7 @@ namespace GameUnits
             Bandit.Move();
             Soldier.Move();
             Soldier.Attack(Bandit);
+            System.Console.WriteLine(Bandit.Health);
         }
     }
 }

@@ -16,5 +16,9 @@ namespace GameUnits
         {
             System.Console.WriteLine($"This unit moved {movement}");
         }
+        public override string ToString()
+        {
+            return $"Unit has {Health} health, and moved {movement} feet.";
+        }
     }
 }
